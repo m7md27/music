@@ -136,7 +136,7 @@ async def for_5s(client, message):
   if message.from_user.username in caes:
     try: 
      devess[bot_username] = wenru
-     await message.reply_text(f"تم تفعيل الصلاحيات المدفوعة للبوت بنجاح، شكرا لك ✨♥")
+     await message.reply_text(f"تم تفعيل الصلاحيات المدفوعة للبوت بنجاح، شكرا لك ..𓃠 ")
     except:
      return await message.reply_text("تم التفعيل من قبل")
   else:
@@ -151,7 +151,7 @@ async def disabl(client, message):
     if message.from_user.username in caes:
         if devess[bot_username] == wenru:
             del devess[bot_username]
-            await message.reply_text("تم تعطيل الصلاحيات المدفوعة للبوت وحذفها من التخزين بنجاح ✨♥")
+            await message.reply_text("تم تعطيل الصلاحيات المدفوعة للبوت وحذفها من التخزين بنجاح ..𓃠 ")
         else:
             await message.reply_text("الصلاحيات غير مفعلة من قبل")
     else:
@@ -168,7 +168,7 @@ async def bot_name(client, message):
     return
    bot_name = bot.text
    names[bot_username] = bot_name
-   await client.send_message(message.chat.id, "**تم تعيين اسم البوت بنجاح ✨♥**")
+   await client.send_message(message.chat.id, "**تم تعيين اسم البوت بنجاح ..𓃠 **")
 
 @Client.on_message(filters.regex("تعيين مطور السورس") & filters.private, group=712813)
 async def dev_user(client, message):
@@ -182,7 +182,7 @@ async def dev_user(client, message):
     return
    bot_name = bot.text.replace("@", "")
    devuser[bot_username] = bot_name
-   await client.send_message(message.chat.id, "**تم تعيين مطور السورس بنجاح ✨♥**")
+   await client.send_message(message.chat.id, "**تم تعيين مطور السورس بنجاح ..𓃠 **")
   else:
    await message.reply_text(f"مرحبا عزيزي {message.from_user.mention} هذا الأمر في الوضع المدفوع، تواصل مع مطور السورس")
    
@@ -199,7 +199,7 @@ async def dev_channel(client, message):
     return
    bot_name = bot.text
    devchannel[bot_username] = bot_name
-   await client.send_message(message.chat.id, "**تم تعيين قناه السورس بنجاح ✨♥**")
+   await client.send_message(message.chat.id, "**تم تعيين قناه السورس بنجاح ..𓃠 **")
   else:
    await message.reply_text(f"مرحبا عزيزي {message.from_user.mention} هذا الأمر في الوضع المدفوع، تواصل مع مطور السورس")
    
@@ -215,7 +215,7 @@ async def dev_phot4(client, message):
      return
     bot_name = bot.text
     devphots[bot_username] = bot_name
-    await client.send_message(message.chat.id, "**تم تعيين صوره السورس بنجاح ✨♥**")
+    await client.send_message(message.chat.id, "**تم تعيين صوره السورس بنجاح ..𓃠 **")
   else:
    await message.reply_text(f"مرحبا عزيزي {message.from_user.mention} هذا الأمر في الوضع المدفوع، تواصل مع مطور السورس")
    
@@ -231,7 +231,7 @@ async def dev_group(client, message):
     return
    bot_name = bot.text
    devgroup[bot_username] = bot_name
-   await client.send_message(message.chat.id, "**تم تعيين جروب السورس بنجاح ✨♥**")
+   await client.send_message(message.chat.id, "**تم تعيين جروب السورس بنجاح ..𓃠 **")
   else:
    await message.reply_text(f"مرحبا عزيزي {message.from_user.mention} هذا الأمر في الوضع المدفوع، تواصل مع مطور السورس")
    
@@ -438,24 +438,24 @@ async def admin_r98hts(client: Client, CallbackQuery):
     chat_id = CallbackQuery.message.chat.id 
     if command == "arbk":
      button = [[InlineKeyboardButton(text="اوامر التشغيل 𓃠", callback_data=f"arbkm"), InlineKeyboardButton(text="اوامر الحمايه 𓃠", callback_data=f"arbkh")], [InlineKeyboardButton(text=f"القـنـاة 𓃠", url=f"{soesh}"), InlineKeyboardButton(text=f"الـجـروب 𓃠", url=f"{gr}")], [InlineKeyboardButton(text=f"{namew}", url=f"https://t.me/{wenru}")], [InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ 𓃠", url=f"https://t.me/{bot_username}?startgroup=True")]]
-     await CallbackQuery.answer("مرحبا بك في قسم اللغه العربيه ✨♥", show_alert=True)	
+     await CallbackQuery.answer("مرحبا بك في قسم اللغه العربيه ..𓃠 ", show_alert=True)	
      await CallbackQuery.edit_message_text(f"**⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n╮⎊ هلا حبيبي {message.from_user.mention}\n│⎉ انا {botmention}│⎉ اقوم بتشغيل المقاطع الصوتيه و الفيديو في المكلمات \n│⎉ بالاضافه للحمايه المحسنه\n│⎉ بالاضافه لمانع التصفيه\n╯⎊ لضمان العمل بكشل صحصح قم برفع المشرفين من البوت\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱**", reply_markup=InlineKeyboardMarkup(button))
     if command == "english":
      button = [[InlineKeyboardButton(text="Play orders 𓃠", callback_data=f"englishm")], [InlineKeyboardButton(text=f"Channel 𓃠", url=f"{soesh}"), InlineKeyboardButton(text=f"Group 𓃠", url=f"{gr}")], [InlineKeyboardButton(text=f"{namew}", url=f"https://t.me/{wenru}")], [InlineKeyboardButton(text="ᴀᴅᴅ ᴍᴇ 𓃠", url=f"https://t.me/{bot_username}?startgroup=True")]]
-     await CallbackQuery.answer("مرحبا بك في قسم اللغه الانجليزيه ✨♥", show_alert=True)	
+     await CallbackQuery.answer("مرحبا بك في قسم اللغه الانجليزيه ..𓃠 ", show_alert=True)	
      await CallbackQuery.edit_message_text(f"**╭─── : [sᴏᴜꝛᴄᴇ 𓃠]({soesh}) : ───╮\n\n𝗔 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗠𝘂𝘀𝗶𝗰 𝗕𝗼𝘁\n𝗣𝗹𝗮𝘆𝗲𝗱 𝗠𝘂𝘀𝗶𝗰 𝗮𝗻𝗱 𝗩𝗶𝗱𝗲𝗼 𝗶𝗻 𝗩𝗖\n𝗕𝗼𝘁 𝗢𝗻𝗹𝗶𝗻𝗲 𝗡𝗼𝘄 ......🖱️❤️\n𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗖𝗵𝗮𝘁\n\n╰─── : [sᴏᴜꝛᴄᴇ 𓃠]({soesh}) : ───╯**", reply_markup=InlineKeyboardMarkup(button))
 
 @Client.on_callback_query(filters.regex("arbkh"))
 async def hem84a1(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n╮⎊ اوامــر الحمايه\n│⎉ قفل او فتح › الروابط\n│⎉ قفل او فتح › الدردشه\n│⎉ قفل او فتح› المنشن\n│⎉ قفل او فتح › الفيديو\n│⎉ قفل او فتح › الصور\n│⎉ قفل او فتح › الملصقات\n│⎉ قفل او فتح › الردود\n│⎉ قفل او فتح › التاك\n│⎉ همسه › عن طريق ريبلاي\n│⎉ تفعيل او تعطيل › جمالي\n│⎉ تفعيل او تعطيل › ايدي\n│⎉ تفعيل او تعطيل › تاك\n│⎉ تفعيل او تعطيل › سمسمي\n╯⎊ رفع مشرف › مع تحديد الصلاحيات\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="arbk")]]))
+    await callback_query.edit_message_text(f"""⦿ **اوامــر الحمايه**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ قفل او فتح › الروابط\n⎋ قفل او فتح › الدردشه\n⦿ قفل او فتح › المنشن\n⎋ قفل او فتح › الفيديو\n⦿ قفل او فتح › الصور\n⎋ قفل او فتح › الملصقات\n⦿ قفل او فتح › الردود\n⎋ قفل او فتح › التاك\n⦿ همسه › عن طريق ريبلاي\n⎋ تفعيل او تعطيل › جمالي\n⦿ تفعيل او تعطيل › ايدي\n⎋ تفعيل او تعطيل › تاك\n⦿ تفعيل او تعطيل › سمسمي\n⎋ رفع مشرف › مع تحديد الصلاحيات\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="arbk")]]))
        
 @Client.on_callback_query(filters.regex("arbkm"))
 async def mem84ma1(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""اوامر التشغيل 𓃠:\n» شغل او تشغيل - لتشغيل الموسيقى  \n» فيد او فيديو  - لتشغيل مقطع فيديو \n» تحميل + اسم الاغنيه - لتحميل ملف صوتي\n» سورس - لعرض معلومات البوت \n»  وقف - ايقاف موقت\n» استكمال - لاستكمال التشغيل\n» تخطي - لتخطي تشغيل الحالي\n» ايقاف او اسكت - لايقاف تشغيل الحالي""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="arbk")]]))
+    await callback_query.edit_message_text(f"""**اوامر التشغيل 𓃠**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n🎸 **شغل او تشغيل**\n⚡️ لتشغيل الموسيقى  \n🎸 **فيد او فيديو** \n⚡️ لتشغيل مقطع فيديو \n🎸 **تحميل + الاسم** \n⚡️ لتحميل ملف صوتي\n🎸 **سورس** \n⚡️ لعرض معلومات البوت \n🎸 **وقف**\⚡️ ايقاف موقت\n🎸 **استكمال** \n⚡️ لاستكمال التشغيل\🎸 **تخطي** \n⚡️ لتخطي تشغيل الحالي\n🎸 **ايقاف او اسكت** \n⚡️ لايقاف تشغيل الحالي\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="arbk")]]))
 
 @Client.on_callback_query(filters.regex("englishm"))
 async def me25ma1(client, callback_query: CallbackQuery):
@@ -539,13 +539,13 @@ async def keyboardforadmins(client, m):
         await m.reply(text, quote=True)        
       if m.text == '《تفعيل التواصل》':
         if r.get(f'enable_twasol{bot_id}'):
-          return await m.reply("• تم تفعيل التواصل مسبقاً", quote=True)          
-        await m.reply(f'**• بواسطة ⟨ {m.from_user.mention} ⟩\n• تم تفعيل التواصل بنجاح**', quote=True)
+          return await m.reply("⦿ تم تفعيل التواصل مسبقاً", quote=True)          
+        await m.reply(f'**⦿ بواسطة ⟨ {m.from_user.mention} ⟩\n⦿ تم تفعيل التواصل بنجاح**', quote=True)
         r.set(f'enable_twasol{bot_id}', 1)      
       if m.text == '《تعطيل التواصل》':
         if not r.get(f'enable_twasol{bot_id}'):
-          return await m.reply("• تم تعطيل التواصل مسبقاً", quote=True)
-        await m.reply(f'**• بواسطة ⟨ {m.from_user.mention} ⟩\n• تم تعطيل التواصل بنجاح**', quote=True)
+          return await m.reply("⦿ تم تعطيل التواصل مسبقاً", quote=True)
+        await m.reply(f'**⦿ بواسطة ⟨ {m.from_user.mention} ⟩\n⦿ تم تعطيل التواصل بنجاح**', quote=True)
         r.delete(f'enable_twasol{bot_id}')      
       if m.text == 'المستخدمين':
         await m.reply_document(get_users_backup(bot_id), quote=True)      
@@ -555,16 +555,16 @@ async def keyboardforadmins(client, m):
         await m.reply_document(get_groups_backup(bot_id), quote=True)      
       if m.text == '《تفعيل الاشتراك》':
         if r.get(f"enable_force_subscribe{bot_id}"):
-          return await m.reply('• تم تفعيل الاشتراك الاجباري مسبقاً',quote=True)
-        await m.reply(f'**• بواسطة ⟨ {m.from_user.mention} ⟩\n• تم تفعيل الاشتراك بنجاح**', quote=True) 
+          return await m.reply('⦿ تم تفعيل الاشتراك الاجباري مسبقاً',quote=True)
+        await m.reply(f'**⦿ بواسطة ⟨ {m.from_user.mention} ⟩\n⦿ تم تفعيل الاشتراك بنجاح**', quote=True) 
         r.set(f"enable_force_subscribe{bot_id}", 1)      
       if m.text == '《تعطيل الاشتراك》':
         if not r.get(f"enable_force_subscribe{bot_id}"):
-          return await m.reply('• تم تعطيل الاشتراك الاجباري مسبقاً',quote=True)
-        await m.reply(f'**• بواسطة ⟨ {m.from_user.mention} ⟩\n• تم تعطيل الاشتراك بنجاح**', quote=True) 
+          return await m.reply('⦿ تم تعطيل الاشتراك الاجباري مسبقاً',quote=True)
+        await m.reply(f'**⦿ بواسطة ⟨ {m.from_user.mention} ⟩\n⦿ تم تعطيل الاشتراك بنجاح**', quote=True) 
         r.delete(f"enable_force_subscribe{bot_id}")      
       if m.text == '《ضع قناة الاشتراك》':
-        await m.reply("• ارسل معرف القناة العام مثال @COURSE_CAESAR", quote=True)
+        await m.reply("⦿ ارسل معرف القناة العام مثال @KiMmeTB0t", quote=True)
         r.set(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -576,29 +576,29 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")      
       if m.text == '《حذف قناة الاشتراك》':
         if not r.get(f'force_channel{bot_id}'):
-          return await m.reply("• لا توجد قناة اشتراك معينة", quote=True)
-        await m.reply("• تم حذف قناة الاشتراك بنجاح", quote=True)
+          return await m.reply("⦿ لا توجد قناة اشتراك معينة", quote=True)
+        await m.reply("⦿ تم حذف قناة الاشتراك بنجاح", quote=True)
         r.delete(f'force_channel{bot_id}')      
       if m.text == '《قناة الاشتراك》':
         if not r.get(f'force_channel{bot_id}'):
-          await m.reply('• لاتوجد قناة مضافة', quote=True)
+          await m.reply('⦿ لاتوجد قناة مضافة', quote=True)
         else:
           channel = r.get(f'force_channel{bot_id}').decode('utf-8')
           await m.reply(f"https://t.me/{channel}", quote=True)      
       if m.text == 'قائمه الأدمنيه':
         if len(get_admins(bot_id)) == 0:
-          await m.reply("• لايوجد آدمنية", quote=True)
+          await m.reply("⦿ لايوجد آدمنية", quote=True)
         else:
-          text = '• قائمة الأدمنية\n'
+          text = '⦿ قائمة الأدمنية\n'
           for admin in get_admins(bot_id):
             try:
               get = await client.get_chat(int(admin))
-              text += f'• [{get.first_name}](tg://user?id={admin})\n'
+              text += f'⦿ [{get.first_name}](tg://user?id={admin})\n'
             except:
-              text += f'• [@COURSE_CAESAR](tg://user?id={admin})\n'
+              text += f'⦿ [@KiMmeTB0t](tg://user?id={admin})\n'
           await m.reply(text, quote=True)         
       if m.text == '《اذاعة》':
-        await m.reply("• ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
+        await m.reply("⦿ ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
         r.set(f"{m.from_user.id}broadcast{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -609,7 +609,7 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")      
       if m.text == '《اذاعة بالتثبيت》':
-        await m.reply("• ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
+        await m.reply("⦿ ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
         r.set(f"{m.from_user.id}broadcastpin{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -620,7 +620,7 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")        
       if m.text == '《اذاعة بالتوجيه》':
-        await m.reply("• ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
+        await m.reply("⦿ ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
         r.set(f"{m.from_user.id}broadcastfor{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -631,7 +631,7 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")      
       if m.text == '《اذاعة بالمجموعات》':
-        await m.reply("• ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
+        await m.reply("⦿ ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
         r.set(f"{m.from_user.id}gbroad{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -642,7 +642,7 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")      
       if m.text == '《اذاعة بالتثبيت بالمجموعات》':
-        await m.reply("• ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
+        await m.reply("⦿ ارسل الإذاعة الآن ( صورة، ملصق، نص، متحركة، جهة اتصال، ملف )",quote=True)
         r.set(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}",1)
         r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -653,7 +653,7 @@ async def keyboardforadmins(client, m):
         r.delete(f"{m.from_user.id}gbroad{m.chat.id}{bot_id}")
         r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")      
       if m.text == 'اخفاء الكيبورد':
-        await m.reply("• تم اخفاء لوحة التحكم لاظهارها مجدداً ارسل /start",
+        await m.reply("⦿ تم اخفاء لوحة التحكم لاظهارها مجدداً ارسل /start",
         quote=True, reply_markup=ReplyKeyboardRemove (selective=True))
 
 
@@ -665,9 +665,9 @@ async def for_owner(client,m):
   text = m.text
   if text in owner_commands:
    if not m.from_user.id == int(OWNER_ID):
-      return await m.reply("• هذا الأمر يخص المطور الأساسي فقط", quote=True)   
+      return await m.reply("⦿ هذا الأمر يخص المطور الأساسي فقط", quote=True)   
    if text == 'نقل ملكية البوت':
-     await m.reply("• ارسل ايدي المالك الجديد الآن", quote=True)
+     await m.reply("⦿ ارسل ايدي المالك الجديد الآن", quote=True)
      r.set(f"{m.from_user.id}transfer{m.chat.id}{bot_id}",1)
      r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
      r.delete(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}")
@@ -678,7 +678,7 @@ async def for_owner(client,m):
      r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
      r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")
    if text == 'رفع ادمن':
-     await m.reply("• ارسل ايدي الآدمن الآن", quote=True)
+     await m.reply("⦿ ارسل ايدي الآدمن الآن", quote=True)
      r.set(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}",1)
      r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
      r.delete(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}")
@@ -689,7 +689,7 @@ async def for_owner(client,m):
      r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
      r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")   
    if text == 'تنزيل ادمن':
-     await m.reply("• ارسل ايدي الآدمن الآن", quote=True)
+     await m.reply("⦿ ارسل ايدي الآدمن الآن", quote=True)
      r.set(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}", 1)
      r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
      r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
@@ -712,7 +712,7 @@ async def response_for_commands(client, m):
      return      
    if await check(m.from_user.id, bot_username, bot_id):
      if text == '《الغاء》':
-       await m.reply("• تم الغاء كل شيء", quote=True)
+       await m.reply("⦿ تم الغاء كل شيء", quote=True)
        r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
        r.delete(f"{m.from_user.id}transfer{m.chat.id}{bot_id}")
        r.delete(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}")
@@ -726,18 +726,18 @@ async def response_for_commands(client, m):
        try:
          get = await client.get_chat(int(text))
        except:
-         return await m.reply("• الآيدي خطأ أرسل آيدي آخر او تأكد ان المستخدم مو حاظر البوت", quote=True)         
+         return await m.reply("⦿ الآيدي خطأ أرسل آيدي آخر او تأكد ان المستخدم مو حاظر البوت", quote=True)         
        if is_admin(int(text), bot_id):
          r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
-         return await m.reply(f"• المستخدم [{get.first_name}]({get.id}) ادمن من قبل")
+         return await m.reply(f"⦿ المستخدم [{get.first_name}]({get.id}) ادمن من قبل")
        r.delete(f"{m.from_user.id}addadmin{m.chat.id}{bot_id}")
-       txt = '• تم رفع المستخدم ادمن بنجاح :\n\n'
-       txt += f'• الأسم : {get.first_name}\n'
-       txt += f'• الآيدي : {get.id}\n'
+       txt = '⦿ تم رفع المستخدم ادمن بنجاح :\n\n'
+       txt += f'⦿ الأسم : {get.first_name}\n'
+       txt += f'⦿ الآيدي : {get.id}\n'
        if get.username:
-         txt += f'• اليوزر : @{get.username}\n'
+         txt += f'⦿ اليوزر : @{get.username}\n'
        if get.bio:
-         txt += f'• البايو : {get.bio}\n'
+         txt += f'⦿ البايو : {get.bio}\n'
        add_admin(int(text), bot_id)
        await m.reply(txt, quote=True)
        return      
@@ -745,18 +745,18 @@ async def response_for_commands(client, m):
       try: 
        if not is_admin(int(text), bot_id):
          r.delete(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}")
-         return await m.reply("• المستخدم مو ادمن من قبل")
+         return await m.reply("⦿ المستخدم مو ادمن من قبل")
        r.delete(f"{m.from_user.id}deladmin{m.chat.id}{bot_id}")
        del_admin(int(text), bot_id)
-       await m.reply("• تم تنزيل المستخدم ادمن بنجاح", quote=True)
+       await m.reply("⦿ تم تنزيل المستخدم ادمن بنجاح", quote=True)
        return 
       except:
-       return await m.reply("• الآيدي خطأ")     
+       return await m.reply("⦿ الآيدي خطأ")     
      if r.get(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}"):
        channel = text.replace("@","")
        r.set(f"force_channel{bot_id}", channel)
        r.delete(f"{m.from_user.id}addchannel{m.chat.id}{bot_id}")
-       await m.reply("• تم تعيين القناة بنجاح ", quote=True)
+       await m.reply("⦿ تم تعيين القناة بنجاح ", quote=True)
 
 
 @Client.on_message(filters.group, group=1586024)
@@ -766,14 +766,14 @@ async def cfsaer(client, m):
     bot_id = client.me.id
     if not is_group(m.chat.id, bot_id): 
         add_group(m.chat.id, bot_id) 
-        text = '• تم تفعيل البوت في مجموعة جديدة\n'
-        text += f'• اسم المجموعة: {m.chat.title}\n'
+        text = '⦿ تم تفعيل البوت في مجموعة جديدة\n'
+        text += f'⦿ اسم المجموعة: {m.chat.title}\n'
         if m.chat.username:
-            text += f'• رابط المجموعة: https://t.me/{m.chat.username}\n'
-        text += '\n• معلومات الذي قام بتفعيلي:\n'
-        text += f'• اسمهم: {m.from_user.mention}\n'
-        text += f'• الايدي: {m.from_user.id}\n'
-        text += f'\n• عدد الجروبات الآن : {len(get_groups(bot_id))}'
+            text += f'⦿ رابط المجموعة: https://t.me/{m.chat.username}\n'
+        text += '\n⦿ معلومات الذي قام بتفعيلي:\n'
+        text += f'⦿ اسمهم: {m.from_user.mention}\n'
+        text += f'⦿ الايدي: {m.from_user.id}\n'
+        text += f'\n⦿ عدد الجروبات الآن : {len(get_groups(bot_id))}'
         if len(get_admins(bot_id)) > 0:
             admins = get_admins(bot_id) 
             for admin in admins:
@@ -806,14 +806,14 @@ async def cfsa54er(client, m):
     photo = await gen_bot(client, bot_username, bot_id)        
     if not is_group(m.chat.id, bot_id):
         add_group(m.chat.id, bot_id)
-        text = '• تم تفعيل البوت في مجموعة جديدة\n'
-        text += f'• اسم المجموعة: {m.chat.title}\n'
+        text = '⦿ تم تفعيل البوت في مجموعة جديدة\n'
+        text += f'⦿ اسم المجموعة: {m.chat.title}\n'
         if m.chat.username:
-            text += f'• رابط المجموعة: https://t.me/{m.chat.username}\n'
-        text += '\n• معلومات الذي قام بتفعيلي:\n'
-        text += f'• اسمهم: {m.from_user.mention}\n'
-        text += f'• الايدي: {m.from_user.id}\n'
-        text += f'\n• عدد الجروبات الآن : {len(get_groups(bot_id))}'
+            text += f'⦿ رابط المجموعة: https://t.me/{m.chat.username}\n'
+        text += '\n⦿ معلومات الذي قام بتفعيلي:\n'
+        text += f'⦿ اسمهم: {m.from_user.mention}\n'
+        text += f'⦿ الايدي: {m.from_user.id}\n'
+        text += f'\n⦿ عدد الجروبات الآن : {len(get_groups(bot_id))}'
         if len(get_admins(bot_id)) > 0:
             admins = get_admins(bot_id)
             for admin in admins:
@@ -829,17 +829,17 @@ async def cfsa54er(client, m):
             photo=photo,
             caption=f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱
 
-تم تفعيل الجروب بنجاح 🥰✅
-وتم تفعيل منع التصفيه تلقائي 🥰✅
-تم رفع المالك والمشرفين 🥰✅
-لمعرفه كل الاوامر اضغط علي (الاوامر بالاسفل) 🥰✅
+تم تفعيل الجروب بنجاح  𓃠
+تم تفعيل منع التصفيه تلقائي  𓃠
+تم رفع المالك والمشرفين  𓃠
+لمعرفه كل الاوامر اضغط علي (الاوامر بالاسفل)  𓃠
 
 ⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "الاوامـر✅", callback_data="backkkkk"
+                            " الاوامـࢪ 𓃠", callback_data="backkkkk"
                         ),
                     ],
                     [
@@ -881,14 +881,14 @@ async def add_group(client, m):
     if mm.id == bot_id:
       if not is_group(m.chat.id, bot_id):
         add_group(m.chat.id, bot_id)
-        text = '• تم اضافة البوت الى مجموعة جديدة\n'
-        text += f'• اسم المجموعه: {m.chat.title}\n'
+        text = '⦿ تم اضافة البوت الى مجموعة جديدة\n'
+        text += f'⦿ اسم المجموعه: {m.chat.title}\n'
         if m.chat.username:
-          text += f'• رابط المجموعة: https://t.me/{m.chat.username}\n'
-        text += '\n• معلومات الي ضافني :\n'
-        text += f'• اسمه : {m.from_user.mention}\n'
-        text += f'• الايدي : {m.from_user.id}\n'
-        text += f'\n• عدد الجروبات الآن : {len(get_groups(bot_id))}'
+          text += f'⦿ رابط المجموعة: https://t.me/{m.chat.username}\n'
+        text += '\n⦿ معلومات الي ضافني :\n'
+        text += f'⦿ اسمه : {m.from_user.mention}\n'
+        text += f'⦿ الايدي : {m.from_user.id}\n'
+        text += f'\n⦿ عدد الجروبات الآن : {len(get_groups(bot_id))}'
         if len(get_admins(bot_id)) > 0:
           list = get_admins(bot_id)
           for admin in list:
@@ -901,12 +901,12 @@ async def add_group(client, m):
           disable_web_page_preview=True)
         await m.reply_photo(
             photo=photo,
-            caption=f"مرحبا عزيزي : [ {m.from_user.mention} ] \nشكرا لاضافتي الي هذي المجموعه : [ {m.chat.title} ]𓃠♥\n اقوم ايضا بحمايه جروبك من التصفيه والاباحي 𓃠♥\n لمعرفه الاوامر : اضغط علي زر الاوامر بالاسفل 👇𓃠♥",
+            caption=f"مرحبا عزيزي : [ {m.from_user.mention} ] \nشكرا لاضافتي الي هذي المجموعه : [ {m.chat.title} ]♥\n اقوم ايضا بحمايه جروبك من التصفيه والاباحي 🖤\n لمعرفه الاوامر : اضغط علي زر الاوامر بالاسفل 👇",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "الاوامـر✅", callback_data="backkkkk"
+                            " الاوامـࢪ 𓃠", callback_data="backkkkk"
                         ),
                     ],
                     [
@@ -939,13 +939,13 @@ async def kick_from_group(client: Client, m: Update, _, __):
       if m.new_participant.kicked_by:
         print("🌀")
       del_group(int(f'-100{m.channel_id}'))
-      text = '• تم طرد البوت من مجموعة:\n\n'
-      text += f'• اسم الي طردني : [{name}](tg://user?id={m.new_participant.kicked_by})\n'
-      text += f'• ايدي الي طردني : {m.new_participant.kicked_by}\n'
-      text += f'\n• معلومات المجموعة: \n'
-      text += f'\n• ايدي المجموعة: `-100{m.channel_id}`'
-      text += f'\n• اسم المجموعه: {title}'
-      text += '\n• تم مسح جميع بيانات الجروب'
+      text = '⦿ تم طرد البوت من مجموعة:\n\n'
+      text += f'⦿ اسم الي طردني : [{name}](tg://user?id={m.new_participant.kicked_by})\n'
+      text += f'⦿ ايدي الي طردني : {m.new_participant.kicked_by}\n'
+      text += f'\n⦿ معلومات المجموعة: \n'
+      text += f'\n⦿ ايدي المجموعة: `-100{m.channel_id}`'
+      text += f'\n⦿ اسم المجموعه: {title}'
+      text += '\n⦿ تم مسح جميع بيانات الجروب'
       if len(get_admins(bot_id)) > 0:
           list = get_admins(bot_id)
           for admin in list:
@@ -970,7 +970,7 @@ async def forbroacasts(client, m):
    if m.from_user:
      if r.get(f"{m.from_user.id}broadcast{m.chat.id}{bot_id}"):
        r.delete(f"{m.from_user.id}broadcast{m.chat.id}{bot_id}")
-       rep = await m.reply("• جاري الإذاعة ..", quote=True)
+       rep = await m.reply("⦿ جاري الاذاعة..𓃠", quote=True)
        for user in get_user(bot_id):
           try:
             await m.copy(int(user))
@@ -979,11 +979,11 @@ async def forbroacasts(client, m):
             pass
           except Exception:
             pass
-       await rep.edit("• تمت الاذاعة بنجاح")
+       await rep.edit("⦿ تمت الاذاعة بنجاح..𓃠")
      
      if r.get(f"{m.from_user.id}broadcastpin{m.chat.id}{bot_id}"):
        r.delete(f"{m.from_user.id}broadcastpin{m.chat.id}{bot_id}")
-       rep = await m.reply("• جاري الإذاعة ..", quote=True)
+       rep = await m.reply("⦿ جاري الاذاعة..𓃠", quote=True)
        for user in get_user(bot_id):
           try:
             a = await m.copy(int(user))
@@ -994,11 +994,11 @@ async def forbroacasts(client, m):
           except Exception as e:
             print(e)
             pass
-       await rep.edit("• تمت الاذاعة بنجاح")
+       await rep.edit("⦿ تمت الاذاعة بنجاح..𓃠")
      
      if r.get(f"{m.from_user.id}broadcastfor{m.chat.id}{bot_id}"):
        r.delete(f"{m.from_user.id}broadcastfor{m.chat.id}{bot_id}")
-       rep = await m.reply("• جاري الإذاعة ..", quote=True)
+       rep = await m.reply("⦿ جاري الإذاعة ..𓃠", quote=True)
        for user in get_user(bot_id):
           try:
             await m.forward(int(user))
@@ -1007,29 +1007,29 @@ async def forbroacasts(client, m):
             pass
           except Exception:
             pass
-       await rep.edit("• تمت الاذاعة بنجاح")
+       await rep.edit("⦿ تمت الاذاعة بنجاح..𓃠")
      
      if r.get(f"{m.from_user.id}gbroad{m.chat.id}{bot_id}"):
        r.delete(f"{m.from_user.id}gbroad{m.chat.id}{bot_id}")
-       rep = await m.reply("• جاري الإذاعة ..", quote=True)
+       rep = await m.reply("⦿ جاري الاذاعة..𓃠", quote=True)
        for group in get_groups(bot_id):
           try:
             await m.copy(int(group))
           except Exception:
             pass
-       await rep.edit("• تمت الاذاعة بنجاح")
+       await rep.edit("⦿ تمت الاذاعة بنجاح..𓃠")
        
      
      if r.get(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}"):
        r.delete(f"{m.from_user.id}gbroadpin{m.chat.id}{bot_id}")
-       rep = await m.reply("• جاري الإذاعة ..", quote=True)
+       rep = await m.reply("⦿ جاري الاذاعة..𓃠", quote=True)
        for group in get_groups(bot_id):
           try:
             a = await m.copy(int(group))
             await a.pin(disable_notification=False)
           except Exception:
             pass
-       await rep.edit("• تمت الاذاعة بنجاح")
+       await rep.edit("⦿ تمت الاذاعة بنجاح..𓃠")
        
 @Client.on_message(filters.private, group=9)
 async def twasol2(client, m):
@@ -1043,7 +1043,7 @@ async def twasol2(client, m):
     if m.from_user.id == OWNER_ID:
         if m.reply_to_message:
             if m.reply_to_message.forward_from:
-                await m.reply(f"• تم إرسال رسالتك إلى {m.reply_to_message.forward_from.first_name} بنجاح", quote=True)
+                await m.reply(f"⦿ تم إرسال رسالتك إلى {m.reply_to_message.forward_from.first_name} بنجاح", quote=True)
                 try:
                     await m.copy(m.reply_to_message.forward_from.id)
                 except:
@@ -1195,9 +1195,9 @@ async def casrty(client, message):
    user = await client.get_chat(OWNER_ID)
    name = user.first_name
    username = user.username     
-   button = [[InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ✨♥", url=f"https://t.me/{bot_username}?startgroup=True")]]
+   button = [[InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ..𓃠 ", url=f"https://t.me/{bot_username}?startgroup=True")]]
    mm = f"**- البوت ده من افضل بوتات التليجرام الموجوده في تشغيل الاغاني 🎸 🎵\n\nالبوت يقدر يحمي مجموعتك من كل انواع الازعاج \n\nتقدر من خلال اوامر البوت تمنع الحاجات دي \n\nقفل الروابط - قفل السب \n- قفل التوجيه - قفل المنشن \n- قفل الصور - قفل الفيديو \n- لقفل الكل اكتب (قفل الكل) \n\nمعرف البوت 🎸 [ @{bot_username} ]\n\n➤ 𝘉𝘰𝘵 𝘵𝘰 𝘱𝘭𝘢𝘺 𝘴𝘰𝘯𝘨𝘴 𝘪𝘯 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵𝘴 ♩🎸 \n\n-𝙱𝙾𝚃 ➤ @{bot_username}\n\n-𝙳𝙴𝚅 ➤ @{username}**"
-   await message.reply_text(f"**- البوت ده من افضل بوتات التليجرام الموجوده في تشغيل الاغاني 🎸 🎵\n\nالبوت يقدر يحمي مجموعتك من كل انواع الازعاج \n\nتقدر من خلال اوامر البوت تمنع الحاجات دي \n\nقفل الروابط - قفل السب \n- قفل التوجيه - قفل المنشن \n- قفل الصور - قفل الفيديو \n- لقفل الكل اكتب (قفل الكل) \n\nمعرف البوت 🎸 [ @{bot_username} ]\n\n➤ 𝘉𝘰𝘵 𝘵𝘰 𝘱𝘭𝘢𝘺 𝘴𝘰𝘯𝘨𝘴 𝘪𝘯 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵𝘴 ♩🎸 \n\n-𝙱𝙾𝚃 ➤ @{bot_username}\n\n-𝙳𝙴𝚅 ➤ @{username}**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك ✨♥", url=f"https://t.me/{bot_username}?startgroup=tru")]]))        
+   await message.reply_text(f"**- البوت ده من افضل بوتات التليجرام الموجوده في تشغيل الاغاني 🎸 🎵\n\nالبوت يقدر يحمي مجموعتك من كل انواع الازعاج \n\nتقدر من خلال اوامر البوت تمنع الحاجات دي \n\nقفل الروابط - قفل السب \n- قفل التوجيه - قفل المنشن \n- قفل الصور - قفل الفيديو \n- لقفل الكل اكتب (قفل الكل) \n\nمعرف البوت 🎸 [ @{bot_username} ]\n\n➤ 𝘉𝘰𝘵 𝘵𝘰 𝘱𝘭𝘢𝘺 𝘴𝘰𝘯𝘨𝘴 𝘪𝘯 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵𝘴 ♩🎸 \n\n-𝙱𝙾𝚃 ➤ @{bot_username}\n\n-𝙳𝙴𝚅 ➤ @{username}**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك ..𓃠 ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))        
    for user in get_user(bot_id):
     hogs = int(user)
     try:
@@ -1210,7 +1210,7 @@ async def casrty(client, message):
      m = await client.send_message(hog, mm, reply_markup=InlineKeyboardMarkup(button))
     except Exception as es:
      print(es)
-   await message.reply_text("**تم الانتهاء من الترويج✨♥**")         
+   await message.reply_text("**تم الانتهاء من الترويج..𓃠 **")         
 
 @Client.on_message(filters.command(["ترويج للميوزك", "ترويج الميوزك"], ""), group=1588024)
 async def casrt54y(client, message):
@@ -1222,9 +1222,9 @@ async def casrt54y(client, message):
    user = await client.get_chat(OWNER_ID)
    name = user.first_name
    username = user.username     
-   button = [[InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ✨♥", url=f"https://t.me/{bot_username}?startgroup=True")]]
+   button = [[InlineKeyboardButton(text="اضف البوت الي مجموعتك او قناتك ..𓃠 ", url=f"https://t.me/{bot_username}?startgroup=True")]]
    mm = f"**- اقوي بوت ميوزك قنوات و جروبات سرعه وجوده خارقه\n\nوبدون تهنيج او تقطيع او توقف وكمان ان البوت في مميزات جامدة𓃠️♥️.\n\nارفع البوت ادمن فقناتك او جروبك واستمتع بجوده الصوت و السرعه الخياليه للبوت 𓃠️♥️\n\nمعرف البوت 🎸 [ @{bot_username} ]\n\n➤ 𝘉𝘰𝘵 𝘵𝘰 𝘱𝘭𝘢𝘺 𝘴𝘰𝘯𝘨𝘴 𝘪𝘯 𝘷𝘰𝘪𝘤𝘦 𝘤𝘩𝘢𝘵𝘴 ♩🎸 \n\n-𝙱𝙾𝚃 ➤ @{bot_username}\n\n-𝙳𝙴𝚅 ➤ @{username}**"
-   await message.reply_text(mm, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك ✨♥", url=f"https://t.me/{bot_username}?startgroup=tru")]]))        
+   await message.reply_text(mm, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("اضف البوت الي مجموعتك او قناتك ..𓃠 ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))        
    for user in get_user(bot_id):
     hogs = int(user)
     try:
@@ -1237,7 +1237,7 @@ async def casrt54y(client, message):
      m = await client.send_message(hog, mm, reply_markup=InlineKeyboardMarkup(button))
     except Exception as es:
      print(es)
-   await message.reply_text("**تم الانتهاء من الترويج✨♥**")         
+   await message.reply_text("**تم الانتهاء من الترويج..𓃠 **")         
     
 @Client.on_message(filters.command(["الاوامر","اوامر السورس","اوامر البوت","الحمايه"], ""), group=73)
 async def kggalid(client, message):
@@ -1248,37 +1248,39 @@ async def kggalid(client, message):
     photo = await gen_bot(client, bot_username, bot_id)        
     if await johned(client, message):
      return
-    await message.reply_photo(photo=photo, caption=f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n╮⎊ **اوامــر البــوت**\n│⎉ م1 › اوامر الحمايه\n│⎉ م2 › اوامر التسليه\n╯⎊ م3 › اوامر المطور\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("م1", callback_data="hemayazombie"), InlineKeyboardButton("م2", callback_data="taslyaxombie")],[InlineKeyboardButton("م3", callback_data="owneerzombie")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")],[InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))       
+    await message.reply_photo(photo=photo, caption=f"""**اوامــر البــوت**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ م𝟷
+› اوامر الحمايه\n⦿ م𝟸 › اوامر التسليه\n⦿ م𝟹 › اوامر المطور\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("م𝟷", callback_data="hemayazombie"), InlineKeyboardButton("م𝟸", callback_data="taslyaxombie")],[InlineKeyboardButton("م𝟹", callback_data="owneerzombie")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")],[InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))       
        
 @Client.on_callback_query(filters.regex("hemayazombie"))
 async def hema1(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n• اوامــر الحمايه\n• قفل وفتح ← الروابط\n• قفل وفتح ← الدردشه\n• قفل وفتح ← المنشن\n• قفل وفتح ← الفيديو\n• قفل وفتح ← الصور\n• قفل وفتح ← الملصقات\n• قفل وفتح ← الردود\n• قفل وفتح ← التاك\n  • تفعيل وتعطيل ← سمسمي\n• همسه ← عن طريق ريبلاي\n• تفعيل وتعطيل ← جمالي ، ايدي ، تاك\n• رفع مشرف ← مع تحديد الصلاحيات\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
+    await callback_query.edit_message_text(f"""⦿ **اوامــر الحمايه**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ قفل او فتح › الروابط\n⎋ قفل او فتح › الدردشه\n⦿ قفل او فتح › المنشن\n⎋ قفل او فتح › الفيديو\n⦿ قفل او فتح › الصور\n⎋ قفل او فتح › الملصقات\n⦿ قفل او فتح › الردود\n⎋ قفل او فتح › التاك\n⦿ همسه › عن طريق ريبلاي\n⎋ تفعيل او تعطيل › جمالي\n⦿ تفعيل او تعطيل › ايدي\n⎋ تفعيل او تعطيل › تاك\n⦿ تفعيل او تعطيل › سمسمي\n⎋ رفع مشرف › مع تحديد الصلاحيات\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
 
 @Client.on_callback_query(filters.regex("taslyaxombie"))
 async def taslyaxombi3e(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n• اوامر الرفع ←رفع قرد ، رفع نمله ..الخ\n• لعبه البنك← لعرض اوامر البنك ارسل `البنك`\n• اعلام ، الاسرع ، مشاهير ، معاني\n• ابراج ، افلام ، اغاني ، احرف\n• افتارات بنات ، افتارات شباب ، انمي\n• حجر ورقه مقص\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
+    await callback_query.edit_message_text(f"""⦿ **اوامر التسليه**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ اوامر الرفع ←رفع قرد ، رفع نمله ..الخ\n⦿ لعبه البنك← لعرض اوامر البنك ارسل `البنك`\n⦿ اعلام\n⦿ الاسرع\n⦿ مشاهير\n⦿ معاني\n⦿ ابراج\n⦿ افلام\n⦿ اغاني\n⦿ احرف\n⦿ افتارات بنات\n⦿ افتارات شباب\n⦿ انمي\n⦿ حجر ورقه مقص\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
        
 @Client.on_callback_query(filters.regex("owneerzombie"))
 async def owneerzom4bie(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n• جلب ورفع نسخه\n• رفع و تنزيل ادمن\n• الاحصائيات\n• اذاعه بجميع انواعها\n• نقل ملكيه البوت\n• معلومات السيرفر\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
+    await callback_query.edit_message_text(f"""⦿ **اوامر البوت**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ جلب ورفع نسخه\n⦿ رفع و تنزيل ادمن\n⦿ الاحصائيات\n⦿ اذاعه بجميع انواعها\n⦿ نقل ملكيه البوت\n⦿ معلومات السيرفر\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]]))
 
 @Client.on_callback_query(filters.regex("groupszombie"))
 async def group5szombie(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n• تفعيل وتعطيل ← جمالي ، ايدي ، تاك\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]])) 
+    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n⦿ تفعيل وتعطيل ← جمالي ، ايدي ، تاك\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("ʙᴧᴄᴋ ⤶", callback_data="backkkkk")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")]])) 
         
 @Client.on_callback_query(filters.regex("backkkkk"))
 async def enzom54ddbie(client, callback_query: CallbackQuery):
     bot_username = client.me.username
     soesh = devchannel.get(bot_username) if devchannel.get(bot_username) else f"{source}"
-    await callback_query.edit_message_text(f"""⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n╮⎊ اوامــر البــوت\n│⎉  م1 › اوامر الحمايه\n│⎉  م2 › اوامر التسليه\n╯⎊  م3 › اوامر المطور\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("م1", callback_data="hemayazombie"), InlineKeyboardButton("م2", callback_data="taslyaxombie")],[InlineKeyboardButton("م3", callback_data="owneerzombie"), InlineKeyboardButton("م4", callback_data="taslyaxmbie")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")],[InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))
+    await callback_query.edit_message_text(f"""**اوامــر البــوت**\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ م𝟷
+› اوامر الحمايه\n⦿ م𝟸 › اوامر التسليه\n⦿ م𝟹 › اوامر المطور\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱""", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("م𝟷", callback_data="hemayazombie"), InlineKeyboardButton("م𝟸", callback_data="taslyaxombie")],[InlineKeyboardButton("م𝟹", callback_data="owneerzombie")],[InlineKeyboardButton("sᴏᴜꝛᴄᴇ 𓃠", url=f"{soesh}")],[InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ", url=f"https://t.me/{bot_username}?startgroup=tru")]]))       
       
      
 @Client.on_message(filters.command(["سورس","السورس","يا سورس","قناة","قناه","《السورس》"], ""))
@@ -1306,7 +1308,7 @@ async def caesar_bot(client, message):
     )
 
     await message.reply_photo(
-        caption=f"**⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n╮⎊ هلا حبيبي {message.from_user.mention}\n│⎉ انا بوت تشغيل المقاطع الصوتيه\n│⎉ بالاضافه للحمايه المحسنه\n│⎉ بالاضافه لمانع التصفيه\n╯⎊ لضمان العمل بكشل صحصح ارفع المشرفين من البوت\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱**", 
+        caption=f"**⦿ هلا حبيبي {message.from_user.mention}\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱\n\n⦿ انا بوت تشغيل المقاطع الصوتيه\n⦿ بالاضافه للحمايه المحسنه\n⦿ بالاضافه لمانع التصفيه\n⦿ لضمان العمل بكشل صحصح ارفع المشرفين من البوت\n\n⊰•━━━•[𓃠 sᴏᴜꝛᴄᴇ 𓃠]({soesh})•━━━•⊱**", 
         photo=ff,
         reply_markup=keyboard
     )
@@ -1379,7 +1381,7 @@ async def upper_back5up(client, msg):
     if msg.from_user.id == OWNER_ID or msg.from_user.id == 1121532100:
         if msg.reply_to_message:
             if msg.reply_to_message.document.file_name.endswith("txt"):
-                wait = await msg.reply("• انتظر قليلا ..", quote=True)
+                wait = await msg.reply("⦿ انتظر قليلا..𓃠 ", quote=True)
                 await msg.reply_to_message.download("./groups.txt")                
                 try:
                     file = open("groups.txt", "r").readlines()
@@ -1389,7 +1391,7 @@ async def upper_back5up(client, msg):
                 for line in file:
                     chat_id = int(line)
                     add_group(chat_id, bot_id)                    
-                await msg.reply("تم رفع نسخه الجروبات بنجاح ✨♥")
+                await msg.reply("تم رفع نسخه الجروبات بنجاح ..𓃠 ")
  
 @Client.on_message(filters.regex("رفع نسخه الاشخاص") & filters.private)
 async def upper_backup(client, msg):
@@ -1399,7 +1401,7 @@ async def upper_backup(client, msg):
     if msg.from_user.id == OWNER_ID or msg.from_user.id == 1121532100:
         if msg.reply_to_message:
             if msg.reply_to_message.document.file_name.endswith("txt"):
-                wait = await msg.reply("• انتظر قليلا ..", quote=True)
+                wait = await msg.reply("⦿ انتظر قليلا..𓃠 ", quote=True)
                 await msg.reply_to_message.download("./users.txt")                
                 try:
                     file = open("users.txt", "r").readlines()
@@ -1409,4 +1411,4 @@ async def upper_backup(client, msg):
                 for line in file:
                     chat_id = int(line)
                     add_user(chat_id, bot_id)                    
-                await msg.reply("تم رفع نسخه الاشخاص بنجاح ✨♥")
+                await msg.reply("تم رفع نسخه الاشخاص بنجاح ..𓃠 ")
